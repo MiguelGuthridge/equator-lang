@@ -38,6 +38,14 @@ function div_mod (a, b) -> (div, mod) {
 }
 ```
 
+### Function calls
+
+Function calls are similar to equation substitutions:
+
+```equator
+div_mod, a = 14, b = 3
+```
+
 ## Expression
 
 Examples of expressions are:

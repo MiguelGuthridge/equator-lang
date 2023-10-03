@@ -19,6 +19,11 @@ Strings are similar to other high-level languages, but aren't the primary
 focus of the language. I doubt I'll do much with them aside from printing
 content.
 
+## `List`
+
+Lists behave similarly to Python lists. Not the primary focus of the language,
+but useful for representing multiple solutions for some problems.
+
 ## `Equation`
 
 Equations are the core of Equator's logic. They are like a function with a
