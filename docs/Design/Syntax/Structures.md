@@ -37,3 +37,12 @@ function div_mod (a, b) -> (div, mod) {
     mod = a % b
 }
 ```
+
+## Expression
+
+Examples of expressions are:
+
+```equator
+x + 2
+sin(x)
+```

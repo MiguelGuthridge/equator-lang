@@ -50,6 +50,8 @@ Expressions don't define equality, and therefore can only be evaluated. They
 can still be stored as variables, but when evaluated with equations, they will
 only get the values derived from the equations substituted.
 
+Expressions are evaluated as unknowns get shared with them.
+
 ## `Condition`
 
 Conditions measure properties of expressions and equations.
