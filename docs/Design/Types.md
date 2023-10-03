@@ -54,4 +54,6 @@ Expressions are evaluated as unknowns get shared with them.
 
 ## `Condition`
 
-Conditions measure properties of expressions and equations.
+Conditions measure properties of expressions and equations. Comprised of two
+expressions related by a boolean operator. When evaluated, a condition produces
+a `Boolean`.

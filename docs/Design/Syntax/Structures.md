@@ -46,3 +46,12 @@ Examples of expressions are:
 x + 2
 sin(x)
 ```
+
+## Condition
+
+Examples of conditions are:
+
+```equator
+x + 2 == 10
+y > 6
+```
