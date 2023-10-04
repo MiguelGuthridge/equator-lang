@@ -11,9 +11,9 @@ and are not shared outside the scope of the function.
 
 ```equator
 equation my_equation (x, y, z) {
-    a = 10 * y
-    b = x - 10
-    z = a / b
+    a = 10 * y;
+    b = x - 10;
+    z = a / b;
 }
 ```
 
@@ -32,9 +32,10 @@ returns. Like equations, values are published for calling code if they are
 specified in the function interface.
 
 ```equator
+// div_mod must be a function as the modulus is not reversible
 function div_mod (a, b) -> (div, mod) {
-    div = a / b
-    mod = a % b
+    div = a / b;
+    mod = a % b;
 }
 ```
 
@@ -43,7 +44,7 @@ function div_mod (a, b) -> (div, mod) {
 Function calls are similar to equation substitutions:
 
 ```equator
-div_mod, a = 14, b = 3
+div_mod, a = 14, b = 3;
 ```
 
 ## Expression

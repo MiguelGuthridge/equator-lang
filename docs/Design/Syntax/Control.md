@@ -8,9 +8,9 @@ block is entered.
 
 ```equator
 if x == 2 {
-    print, value = "x is 2"
+    print, value = "x is 2";
 } else {
-    print, value = "x is not 2"
+    print, value = "x is not 2";
 }
 ```
 
@@ -32,9 +32,9 @@ direction, it creates two variations on the output.
 // x = [ -2, 2 ]
 equation abs (x, a) {
     when x > 0 {
-        a = x
+        a = x;
     } else {
-        a = -x
+        a = -x;
     }
 }
 ```
@@ -44,9 +44,9 @@ equation abs (x, a) {
 Behaves similarly to a while loop in conventional languages.
 
 ```equator
-x := 0
+x := 0;
 while x < 10 {
-    print, value = x
+    print, value = x;
 }
 ```
 
@@ -61,11 +61,11 @@ the language.
 Behaves like a Python for loop, iterating over an iterable.
 
 ```equator
-abs, a = 3 | x
+abs, a = 3 | x;
 
 for result in x {
     if result > 0 {
-        print, value="found the positive result"
+        print, value=["found the positive result", x];
     }
 }
 ```
