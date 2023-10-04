@@ -62,22 +62,36 @@ while x < 10 {
 }
 ```
 
-## Where loop?
+## Whilst loop
 
-`where` is to `while` as `when` is to `if`. My poor feeble brain cannot
-comprehend how this would work currently, so it probably won't be included in
-the language.
+`whilst` is to `while` as `when` is to `if`. It can produce the same result as
+a while loop, but in reverse, it produces a collection of values. Without
+additional constraints, the number of values could be infinite.
 
 ## For loop
 
 Behaves like a Python for loop, iterating over an iterable.
 
 ```equator
-abs, a = 3 | x;
+abs, a = 3 | $x;
 
-for result in x {
-    if result > 0 {
-        print, value=["found the positive result", x];
+for $result in $x {
+    if $result > 0 {
+        print, value=["found the positive result", $result];
     }
+}
+```
+
+## Over loop
+
+`over` is to `for` as `when` is to `if`. It can be used to apply equations over
+all elements of an iterable.
+
+```equator
+$output = [];
+
+over $num in [1, 2, 3, 4, 5] {
+    // Append each value to the output
+    append, list = $output, value = $num | $output;
 }
 ```

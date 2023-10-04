@@ -91,6 +91,16 @@ in conjunction with the pipe operator
 x + a => 6
 ```
 
+## `$$` capture all operator
+
+Capture all variables involved with a statement.
+
+```equator
+>>> // Capture both x and y, and pass them to the expression `x + y`
+>>> x + 2 * y = 10, 2 * x = y | $$ & x + y;
+x + y => 6
+```
+
 ## `=` equality operator
 
 The equality operator is used to signify that two sides of an equation are
@@ -133,6 +143,22 @@ a = 3
 ## `/` division operator
 
 ## `%` modulus operator
+
+Defined in the same way as Python's modulus (negative values behave
+differently)
+
+```equator
+>>> -4 % 5
+-4 % 5 => 1
+>>> -3 % 5
+-3 % 5 => 2
+>>> -2 % 5
+-2 % 5 => 3
+>>> -1 % 5
+-1 % 5 => 4
+>>> 0 % 5
+0 % 5 => 0
+```
 
 ## `^` power operator
 

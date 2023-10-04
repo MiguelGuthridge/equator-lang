@@ -31,3 +31,19 @@ with a star followed by a slash `*/`.
 `equation` - declare an equation.
 
 `function` - declare a function.
+
+## [Operators](Operators.md)
+
+Documentation of operators used in Equator
+
+## [Data](./Data.md)
+
+Documentation of base data types
+
+## [Structures](./Structures.md)
+
+Documentation of more advanced data structures
+
+## [Control](./Control.md)
+
+Documentation of control flow syntax

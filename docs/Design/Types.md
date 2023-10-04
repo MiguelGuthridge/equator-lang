@@ -1,5 +1,8 @@
 # Data types
 
+Example syntax of data types can be found in
+[syntax documentation](./Syntax/README.md).
+
 ## `Type`
 
 A meta-type.
