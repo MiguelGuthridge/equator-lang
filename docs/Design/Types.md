@@ -11,7 +11,7 @@ treated the same.
 
 ## `Boolean`
 
-True of false. Similar to boolean types in other languages.
+`true` of `false`. Similar to boolean types in other languages.
 
 ## `String`
 

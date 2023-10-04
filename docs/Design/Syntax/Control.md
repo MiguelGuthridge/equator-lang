@@ -14,6 +14,18 @@ if x == 2 {
 }
 ```
 
+### Interaction with `,` comma operator
+
+When a comma operator is used in an if statement, the first element is
+required to be a conditional, and all others are required to be an equation.
+The conditional is evaluated simultaneously with the equations.
+
+```equator
+if x == 100, x = 10^2 {
+    print, value = "x^2 is 100";
+}
+```
+
 ## When-else
 
 One limitation of if-else statements is that they require the condition to be
@@ -32,7 +44,7 @@ direction, it creates two variations on the output.
 // x = [ -2, 2 ]
 equation abs (x, a) {
     when x > 0 {
-        a = x;
+        a = $x;
     } else {
         a = -x;
     }
@@ -44,9 +56,9 @@ equation abs (x, a) {
 Behaves similarly to a while loop in conventional languages.
 
 ```equator
-x := 0;
+$x := 0;
 while x < 10 {
-    print, value = x;
+    print, value = $x;
 }
 ```
 
