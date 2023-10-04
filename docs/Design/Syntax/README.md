@@ -47,3 +47,7 @@ Documentation of more advanced data structures
 ## [Control](./Control.md)
 
 Documentation of control flow syntax
+
+## [Examples](./Examples.md)
+
+Full examples of the syntax
