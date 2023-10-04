@@ -41,7 +41,7 @@ equation caesar_char ($input, $output, $shift) {
 equation caesar ($input, $output, $shift) {
     $output := [];
     // FIXME: How is this reversed? Do we need a `map` function?
-    // That would require higher-order functions, which is yucky with the
+    // That would require higher-order equations, which is yucky with the
     // current syntax
     over $char in $input {
         $caesar_char, input = $char, shift = $shift | output -> $shifted;
