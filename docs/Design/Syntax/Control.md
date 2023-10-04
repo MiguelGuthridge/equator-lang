@@ -68,30 +68,8 @@ while x < 10 {
 a while loop, but in reverse, it produces a collection of values. Without
 additional constraints, the number of values could be infinite.
 
-## For loop
+One important difference is the presence of two conditions, one for starting
+the loop, which is required to be true when the loop begins, and one for ending
+the loop, which is required to be true when the loop ends.
 
-Behaves like a Python for loop, iterating over an iterable.
-
-```equator
-abs, a = 3 | $x;
-
-for $result in $x {
-    if $result > 0 {
-        print, value=["found the positive result", $result];
-    }
-}
-```
-
-## Over loop
-
-`over` is to `for` as `when` is to `if`. It can be used to apply equations over
-all elements of an iterable.
-
-```equator
-$output = [];
-
-over $num in [1, 2, 3, 4, 5] {
-    // Append each value to the output
-    append, list = $output, value = $num | $output;
-}
-```
+FIXME: Figure out if this actually is enough for turing completeness?
