@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "equator-lang"
+version = "0.1.0"
+description = "A mathematical programming language"
+authors = ["Miguel Guthridge <hdsq@outlook.com.au>"]
+readme = "README.md"
+packages = [{include = "equator"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+mypy = "^1.5.1"
+flake8 = "^6.1.0"
+jestspectation = "^1.2.1"
+subtask = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
