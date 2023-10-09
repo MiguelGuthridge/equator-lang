@@ -24,13 +24,11 @@ with a star followed by a slash `*/`.
 
 `while` - while loop.
 
-`where` - where loop (if I can wrap my brain around it).
-
-`for` - for loop.
+`whilst` - whilst loop (if I can wrap my brain around it).
 
 `equation` - declare an equation.
 
-`function` - declare a function.
+`relation` - declare a relation.
 
 ## [Operators](Operators.md)
 
