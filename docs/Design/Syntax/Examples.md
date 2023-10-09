@@ -6,8 +6,6 @@
 $ASCII_UPPER_A := 65;
 $ASCII_LOWER_A := 97;
 
-
-
 // Apply caesar cipher to a single letter
 equation caesar_char ($input, $output, $shift) {
     when is_ascii_letter, char = $input {
@@ -15,7 +13,7 @@ equation caesar_char ($input, $output, $shift) {
         $shift := $shift % 26;
 
         // Convert the char to an int
-        char_to_int, char = $input | $int;
+        $char_to_int, char = $input | $int;
 
         // Uppercase and lowercase letters have a different base value
         when ($int > $ASCII_LOWER_A) {
@@ -31,7 +29,7 @@ equation caesar_char ($input, $output, $shift) {
         $out_num := ($in_num + $shift) % 26;
 
         // Convert it back to a letter
-        $output := char_to_int, int = $out_num + $char_base;
+        $output := $char_to_int, int = $out_num + $char_base;
     } else {
         $output := input;
     }
