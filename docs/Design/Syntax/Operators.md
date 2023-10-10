@@ -173,6 +173,10 @@ An operator to convert truthy values to falsy values and vice-versa.
 !false => true
 ```
 
+## `||` boolean or operator
+
+## `&&` boolean and operator
+
 ## `==` equality conditional
 
 A conditional operator that checks whether two expressions are equal.

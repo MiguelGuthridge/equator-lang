@@ -4,6 +4,7 @@
 Definitions for tokens
 """
 from enum import Enum
+from typing import Optional
 
 
 class TokenType(Enum):
@@ -20,9 +21,13 @@ class TokenType(Enum):
     KEYWORD_EQUATION = 6
     KEYWORD_RELATION = 7
 
-    LITERAL_NUMBER = 10
-    LITERAL_BOOLEAN = 11
-    LITERAL_STRING = 12
+    LITERAL_BOOLEAN = 10
+    LITERAL_STRING = 11
+    LITERAL_NUMBER_DEC = 12
+    LITERAL_NUMBER_HEX = 13
+    LITERAL_NUMBER_OCT = 14
+    LITERAL_NUMBER_BIN = 15
+    LITERAL_NUMBER_FLOAT = 16
 
     UNKNOWN = 20
     VARIABLE = 21
@@ -50,6 +55,8 @@ class TokenType(Enum):
     OPERATOR_MOD = 52
     OPERATOR_POWER = 53
     OPERATOR_NOT = 54
+    OPERATOR_BOOLEAN_OR = 55
+    OPERATOR_BOOLEAN_AND = 56
 
     CONDITIONAL_EQUALITY = 60
     CONDITIONAL_INEQUALITY = 61
@@ -64,9 +71,15 @@ class Token:
     A token
     """
 
-    def __init__(self, kind: TokenType, string: str) -> None:
+    def __init__(
+        self,
+        kind: TokenType,
+        string: str,
+        notes: Optional[str] = None,
+    ) -> None:
         self.kind = kind
         self.string = string
+        self.notes = notes
 
     def __repr__(self) -> str:
         return self.string
